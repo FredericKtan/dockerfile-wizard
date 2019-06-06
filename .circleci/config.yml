@@ -41,6 +41,13 @@ jobs:
     steps:
       - checkout
 
+      - run:
+          name: Greeting
+          command: echo Hello, world.
+
+      - run:
+          name: Print the Current Time
+          command: date
 ##      - run: bash scripts/generate.sh > Dockerfile
 
 ##      - run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
